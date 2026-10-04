@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dewi Puspitasari — Web3 Researcher & Builder</title>
   <meta name="description" content="Portfolio of Dewi Puspitasari, Web3 Researcher and Builder." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nonomi29.github.io/portfolio-web3/" />
+  <meta property="og:title" content="Dewi Puspitasari — Web3 Researcher & Builder" />
+  <meta property="og:description" content="Exploring, contributing, and building in decentralized ecosystems." />
+  <meta property="og:image" content="https://nonomi29.github.io/portfolio-web3/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://nonomi29.github.io/portfolio-web3/" />
+  <meta name="twitter:title" content="Dewi Puspitasari — Web3 Researcher & Builder" />
+  <meta name="twitter:description" content="Exploring, contributing, and building in decentralized ecosystems." />
+  <meta name="twitter:image" content="https://nonomi29.github.io/portfolio-web3/og-image.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -19,6 +34,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
         <a href="https://github.com/nonomi29" target="_blank" rel="noopener" class="nav-cta">GitHub</a>
       </nav>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
@@ -29,15 +45,39 @@
 
   <main>
     <section class="hero" id="about">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">Web3 Researcher & Builder</p>
+          <h1 class="hero-title">Dewi Puspitasari</h1>
+          <p class="hero-subtitle">
+            Exploring, contributing, and building in decentralized ecosystems. Active as a node validator, community pioneer, and independent builder in Web3.
+          </p>
+          <div class="hero-actions">
+            <a href="https://github.com/nonomi29" target="_blank" rel="noopener" class="btn btn-primary">View GitHub</a>
+            <a href="#projects" class="btn btn-secondary">See Work</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="profile.jpg" alt="Dewi Puspitasari" id="profileImage" onerror="this.src='https://api.dicebear.com/7.x/notionists/svg?seed=nonomi'" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-section">
       <div class="container">
-        <p class="eyebrow">Web3 Researcher & Builder</p>
-        <h1 class="hero-title">Dewi Puspitasari</h1>
-        <p class="hero-subtitle">
-          Exploring, contributing, and building in decentralized ecosystems. Active as a node validator, community pioneer, and independent builder in Web3.
-        </p>
-        <div class="hero-actions">
-          <a href="https://github.com/nonomi29" target="_blank" rel="noopener" class="btn btn-primary">View GitHub</a>
-          <a href="#projects" class="btn btn-secondary">See Work</a>
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Ecosystems</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Public Repos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">2024</span>
+            <span class="stat-label">Active Since</span>
+          </div>
         </div>
       </div>
     </section>
@@ -72,26 +112,36 @@
           <article class="project-item">
             <div class="project-meta">
               <h3>Nillion Node Operations</h3>
-              <span class="project-tags">Infrastructure · DevOps · Monitoring</span>
+              <span class="project-status active">Active</span>
             </div>
+            <p class="project-role">Role: Node Validator</p>
             <p>Validator node setup, maintenance, and uptime monitoring for the Nillion network. Includes automated alerting and documentation.</p>
-            <a href="https://github.com/nonomi29" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+            <div class="project-links">
+              <a href="https://nillion.com" target="_blank" rel="noopener" class="project-link">Nillion →</a>
+            </div>
           </article>
           <article class="project-item">
             <div class="project-meta">
               <h3>Elys Community Onboarding</h3>
-              <span class="project-tags">Community · Growth · Content</span>
+              <span class="project-status active">Active</span>
             </div>
+            <p class="project-role">Role: Community Pioneer</p>
             <p>Led onboarding flows and educational content for new Elys community members, improving retention and participation.</p>
-            <a href="https://github.com/nonomi29" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+            <div class="project-links">
+              <a href="https://elys.network" target="_blank" rel="noopener" class="project-link">Elys →</a>
+            </div>
           </article>
           <article class="project-item">
             <div class="project-meta">
               <h3>Irys Builder Tools</h3>
-              <span class="project-tags">Web3 · Tooling · Open Source</span>
+              <span class="project-status ongoing">Ongoing</span>
             </div>
+            <p class="project-role">Role: Independent Builder</p>
             <p>Experimental tooling and contributions around Irys permanent data layer, built as an independent builder.</p>
-            <a href="https://github.com/nonomi29" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+            <div class="project-links">
+              <a href="https://irys.xyz" target="_blank" rel="noopener" class="project-link">Irys →</a>
+              <a href="https://github.com/nonomi29" target="_blank" rel="noopener" class="project-link">GitHub →</a>
+            </div>
           </article>
         </div>
       </div>
@@ -132,11 +182,48 @@
       </div>
     </section>
 
+    <section class="section section-muted" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-intro">Open to collaborations in Web3 research, node operations, community building, and builder tooling.</p>
+        <div class="contact-grid">
+          <a href="mailto:dina10ct@gmail.com" class="contact-card">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <h4>Email</h4>
+              <p>dina10ct@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://x.com/0xnonomi" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-icon">🐦</span>
+            <div>
+              <h4>X / Twitter</h4>
+              <p>@0xnonomi</p>
+            </div>
+          </a>
+          <a href="#" class="contact-card" aria-label="Discord: 0xnonomi" onclick="navigator.clipboard.writeText('0xnonomi'); alert('Discord username copied: 0xnonomi'); return false;">
+            <span class="contact-icon">💬</span>
+            <div>
+              <h4>Discord</h4>
+              <p>0xnonomi (click to copy)</p>
+            </div>
+          </a>
+          <a href="https://t.me/vevenomi" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-icon">✈️</span>
+            <div>
+              <h4>Telegram</h4>
+              <p>@vevenomi</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="cta-section">
       <div class="container">
         <h2>Let's build something together.</h2>
-        <p>Open to collaborations in Web3 research, node operations, and builder tooling.</p>
-        <a href="https://github.com/nonomi29" target="_blank" rel="noopener" class="btn btn-primary">Visit GitHub</a>
+        <p>Have an idea, role, or collaboration in mind? Reach out.</p>
+        <a href="mailto:dina10ct@gmail.com" class="btn btn-primary">Send Email</a>
       </div>
     </section>
   </main>
